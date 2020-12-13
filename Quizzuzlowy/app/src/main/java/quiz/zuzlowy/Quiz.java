@@ -47,7 +47,7 @@ public class Quiz extends Task {
     ImageButton bladOdpC;
     ImageButton pyt;
     private boolean blocker;
-    private int liczbaPytan = 51;
+    private int liczbaPytan = 63;
     private AdView mAdView;
     private InterstitialAd mInterstitialAd;
 
