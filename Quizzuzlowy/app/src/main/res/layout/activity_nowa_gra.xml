@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NowaGra"
+    android:background="@drawable/tlo1">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewNowaGra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-8888258329683719/9893230956">
+    </com.google.android.gms.ads.AdView>
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="12dp"
+        android:paddingBottom="20dp"
+        android:scrollbarStyle="outsideOverlay">
+
+        <RelativeLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/twojNick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:background="#00000000"
+                app:srcCompat="@drawable/nick" />
+
+            <ImageButton
+                android:id="@+id/wpiszSwojNick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/twojNick"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="#00000000"
+                app:srcCompat="@drawable/mnick" />
+
+            <EditText
+                android:id="@+id/poletekstowe"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/twojNick"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:inputType="textPersonName"
+                android:maxLength="21"
+                android:text=""
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/imagestart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/poletekstowe"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:background="#00000000"
+                app:srcCompat="@drawable/start" />
+
+            <ImageButton
+                android:id="@+id/wstecz1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imagestart"
+                android:layout_marginTop="20dp"
+                android:background="#00000000"
+                app:srcCompat="@drawable/w1" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

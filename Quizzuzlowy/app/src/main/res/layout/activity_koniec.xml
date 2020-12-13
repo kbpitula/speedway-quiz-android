@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Koniec"
+    android:background="@drawable/zmar">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewKoniec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-8888258329683719/2206312623">
+    </com.google.android.gms.ads.AdView>
+
+    <TextView
+        android:id="@+id/koniecTXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="KONIEC GRY"
+        android:textColor="#F9D625"
+        android:background="#000000"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/koniecTXT"
+        android:text="Twój nick: "
+        android:layout_marginTop="10dp"
+        android:textColor="#F9D625"
+        android:background="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/KoniecPKT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Nick"
+        android:text="Zdobyte Punkty: "
+        android:layout_marginTop="10dp"
+        android:textColor="#F9D625"
+        android:background="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <ImageButton
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:layout_below="@id/KoniecPKT"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/powrot" />
+
+    <ImageButton
+        android:id="@+id/again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/KoniecPKT"
+        android:layout_toRightOf="@+id/menu"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/again" />
+</RelativeLayout>

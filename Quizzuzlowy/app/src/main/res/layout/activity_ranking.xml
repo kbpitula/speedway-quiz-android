@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ranking"
+    android:background="@drawable/tlopytanie">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewRanking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-8888258329683719/2272609857">
+    </com.google.android.gms.ads.AdView>
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="500sp"
+        android:layout_height="800sp"
+        android:paddingTop="12dp"
+        android:paddingBottom="20dp"
+        android:scrollbarStyle="outsideOverlay">
+
+        <RelativeLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/wstecz1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:layout_marginTop="50dp"
+                app:srcCompat="@drawable/w1" />
+
+            <TextView
+                android:id="@+id/warning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/wstecz1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="50dp"
+                android:text="Ranking: "
+                android:textColor="#F2A825"
+                android:textSize="38sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/place1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/warning"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-black"
+                android:text=""
+                android:textColor="#F2A825"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/place2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/place1"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:textColor="#E6A82D"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/place3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:layout_below="@id/place2"
+                android:textColor="#F9A825"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/place4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:layout_below="@id/place3"
+                android:textColor="#F9A825"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/place5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:layout_below="@id/place4"
+                android:textColor="#F9A825"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/place6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:layout_below="@id/place5"
+                android:textColor="#F9A825"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
